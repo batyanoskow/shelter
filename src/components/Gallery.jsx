@@ -2,13 +2,13 @@ import { LazyImage } from "./LazyImage"
 
 const Gallery = () => {
     const imagesGallery = [
-        require('../img/gallery1.png'),
-        require('../img/gallery2.png'),
-        require('../img/gallery3.png'),
-        require('../img/gallery4.png'),
-        require('../img/gallery5.png'),
-        require('../img/gallery6.png'),
-        require('../img/gallery7.png'),
+        require('../img/gallery1.webp'),
+        require('../img/gallery2.webp'),
+        require('../img/gallery3.webp'),
+        require('../img/gallery4.webp'),
+        require('../img/gallery5.webp'),
+        require('../img/gallery6.webp'),
+        require('../img/gallery7.webp'),
     ]
     return(
         <div className="page__gallery gallery" id="gallery">

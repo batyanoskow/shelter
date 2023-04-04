@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';	
 import { LazyImage } from "./LazyImage";  
-import team1 from "../img/team1.png"
-import team2 from "../img/team2.png"
-import team3 from "../img/team3.png"
-import team4 from "../img/team4.png"
-import team5 from "../img/team5.png"
+import team1 from "../img/team1.webp"
+import team2 from "../img/team2.webp"
+import team3 from "../img/team3.webp"
+import team4 from "../img/team4.webp"
+import team5 from "../img/team5.webp"
 
 const Team = () => {
 	const paramsTeam = {

@@ -1,8 +1,10 @@
 // Заголовки, общие БЄМ блоки и проче...
 .btn-heart{
-    border: 1px solid $mainColor;
+    	border: 1px solid $mainColor;
 		border-radius: 10px 5px;
-		padding: rem(20);
+		padding: rem(20) 0;
+		@include adaptiveValue("padding-left", 20, 10);
+		@include adaptiveValue("padding-right", 20, 10);
 		display: flex;
 		max-width: rem(240);
 		align-items: center;
@@ -19,16 +21,30 @@
 
 .popup-overlay {
 	background-color: $mainGrey;
+	height: 100%;
+}
+.popup-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	& img {
+		width: 90%;
+	}
 }
 .header-overlay{
 	background-color: $mainColor;
+	
 }
 .header-content{
 	width: 100%;
 	height: 100%;
 }
 .popup{
+	width: 100%;
 	overflow: scroll;
+	&::-webkit-scrollbar{
+		display: none;
+	}
 	height: 100%;
 	&__container{
 		
@@ -36,7 +52,7 @@
 	
 	}
 	&__menu{
-		margin-top: rem(30);
+		padding-top: rem(30);
 		color: $mainGreen;
 		display: flex;
 		align-items: center;
@@ -65,11 +81,11 @@
 	}
 	&__title{
 		color: $mainGreen;
-		font-size: rem(64);
+		@include adaptiveValue("font-size", 64, 40);
 		line-height: 120%;
 	}
 	&__sub-title{
-		font-size: rem(28);
+		@include adaptiveValue("font-size",28 ,20 );
 		font-weight: 300;
 		color: $mainGrey;
 	}
@@ -87,7 +103,7 @@
 	&__buttons{
 		margin-top: rem(100);
 		display: flex;
-		align-items: center;
+		align-items: stretch;
 		justify-content: space-between;
 	}
 	&__button{
@@ -95,6 +111,13 @@
 		padding: rem(30);
 		border: 1px solid $mainGreen;
 		border-radius: rem(15);
+		color: $mainGreen;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		& svg{
+			margin-right: rem(20);
+		}
 	}
 }
 @media (max-width:$tablet){
@@ -115,4 +138,19 @@
 			margin-top: rem(40);
 		}
 	}
+}
+@media (max-width: em(600)){
+	  .custom-popup1__button{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		& span {
+			display: none;
+		}
+		& svg{
+			margin-right: 0;
+			font-size: rem(30);
+		}
+
+	  }
 }

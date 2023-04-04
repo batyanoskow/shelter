@@ -1,6 +1,6 @@
 import { LazyImage } from "./LazyImage";
 import { PopUp } from "./PopUp";
-import shelter from "../img/shelter.png"
+import shelter from "../img/shelter.webp"
 const Who = () => {
     return (
         <div className="page__shelter shelter" id="shelter">

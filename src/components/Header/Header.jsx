@@ -3,11 +3,11 @@ import { Logo } from "../Logo";
 import { HeaderPopUp } from "./HeaderPopup";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { Navigation , Pagination , EffectFade} from "swiper";
-import dog1 from "../../img/dog1.png"
-import dog2 from "../../img/dog2.png"
-import qr from "../../img/qr.jpg"
+import { faHeart ,faCreditCard} from "@fortawesome/free-solid-svg-icons";
+import { Navigation , Pagination , EffectFade , Autoplay} from "swiper";
+import dog1 from "../../img/dog1.webp"
+import dog2 from "../../img/dog2.webp"
+import qr from "../../img/qr.webp"
 import { LazyImage } from "../LazyImage";
 const Header = () => {
     const images = [dog1 , dog2]
@@ -19,7 +19,7 @@ const Header = () => {
         "Галерея"
     ];
     const params = {
-        modules: [Navigation,EffectFade,Pagination],
+        modules: [Navigation,EffectFade,Pagination , Autoplay],
 			slidesPerView: 1,
             loop : true,
 			speed: 500,
@@ -31,6 +31,9 @@ const Header = () => {
 				el: '.swiper-pagination',
 				clickable: true,
 			},
+            autoplay : {
+                delay : 2000
+            },
 			navigation: {
 				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next',
@@ -69,27 +72,31 @@ const Header = () => {
                                 })}
                             </ul>   
                         </nav>
-                        <div className="header__button btn-heart"><span>Підтримати</span><FontAwesomeIcon icon={faHeart} beat /></div>
-                        {/* <HeaderPopUp trg={<div className="header__button btn-heart"><span>Підтримати</span><FontAwesomeIcon icon={faHeart} beat /></div>}>
+
+                        <HeaderPopUp trg={<div className="header__button btn-heart"><span>Підтримати</span><FontAwesomeIcon icon={faHeart} beat /></div>}>
                             <div className="custom-popup1__inform">
                                 <h1 className="custom-popup1__title">Мій собака – моє серцебиття біля моїх ніг!</h1>
                                 <p className="custom-popup1__sub-title">Задонативши нам, ви долучитесь до будівництва притулку для собак. Також ваша фінансова допомога буде спрямована на підготовку вакцин та необхідних документів для виїзду собачок закордон.</p>
-                                <div className="custom-popup1__qr">
+                                { window.innerWidth > 991 ?<div className="custom-popup1__qr">
                                     <LazyImage image={qr}/>
-                                </div>
+                                </div> : ""} 
                             </div>
                             <div className="custom-popup1__buttons">
                                 <button className="custom-popup1__button"></button>
                                 <button className="custom-popup1__button"></button>
-                                <button className="custom-popup1__button"></button>
+                                <HeaderPopUp trg={<button className="custom-popup1__button"><FontAwesomeIcon icon={faCreditCard}  bounce/><span>Card</span></button>}>
+
+                                </HeaderPopUp>
+                                
                             </div>
-                        </HeaderPopUp> */}
+                        </HeaderPopUp>
                         <button type="button" className={`menu__icon icon-menu ${hideOrShow}`} onClick={toggleMenu}><span></span></button>
                     </div>
                     <div className="header__slider">
                         <button type="button" className="swiper-button-prev"><i className="icon-arrow-left"></i></button>
                         <Swiper className="swiper1" 
                         wrapperClass="header__wrapper"
+                        allowTouchMove={false}
                         {...params}
                         >
                         

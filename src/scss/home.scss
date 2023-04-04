@@ -44,7 +44,7 @@
         align-self: end;
         position: relative;
         z-index: 5;
-        font-size: rem(24);
+       @include adaptiveValue("font-size", 24, 16);
         font-weight: 300;
         color: $mainGrey;
     }
@@ -99,7 +99,7 @@
 }
 //-------------------------------------------------------------------------------------------------------------------------//
 .help {
-    background-image: url(../img/bg-3.png);
+    background-image: url(../img/bg-3.webp);
     background-size: cover;
     @include adaptiveValue("padding-top", 600, 150);
     @include adaptiveValue("padding-bottom", 200, 90);
@@ -306,7 +306,6 @@
 
     &__grid {
         display: grid;
-        @include adaptiveValue("height", 1000, 440 , 1100 , 530.99 , 1);
         grid-template-columns: 1fr 1fr 1.2fr;
         grid-template-areas:
         "dog1 dog2 dog3"
@@ -355,7 +354,6 @@
         flex-direction: column;
     }
     .grid-gallery{
-       @include adaptiveValue("height", 2776, 2250 , 530.99 , 430 , 1);
         &__item{
             & img{
                 width: 100%;

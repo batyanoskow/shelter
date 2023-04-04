@@ -1,11 +1,11 @@
 import { LazyImage } from "./LazyImage";
-import help1 from "../img/help1.png";
-import help2 from "../img/help2.png";
-import help3 from "../img/help3.png";
-import help4 from "../img/help4.png";
-import help5 from "../img/help5.png";
-import help6 from "../img/help6.png";
-import help7 from "../img/help7.png";
+import help1 from "../img/help1.webp";
+import help2 from "../img/help2.webp";
+import help3 from "../img/help3.webp";
+import help4 from "../img/help4.webp";
+import help5 from "../img/help5.webp";
+import help6 from "../img/help6.webp";
+import help7 from "../img/help7.webp";
 
 
 
