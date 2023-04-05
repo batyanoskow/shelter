@@ -20,7 +20,7 @@ const Team = () => {
 			enabled: true,
 			delay: 1,
 		},
-		speed: 5000,
+		speed: 10000,
 		breakpoints: {
 			319.99: {
 				slidesPerView: 1

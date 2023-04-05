@@ -317,7 +317,7 @@
 }
 .grid-gallery{
     &__item {
-        & img{
+        & div span img{
             max-width: 100%;
         }
         &:nth-child(1){
@@ -355,10 +355,18 @@
     }
     .grid-gallery{
         &__item{
-            & img{
+            & div span 
+            {
+                display: flex!important;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
-                
+                & img{
+                    width: 75%;
+                    
+                }
             }
+        
             &:nth-child(1){
                 margin: 0;
             }
@@ -430,9 +438,8 @@
     // .team__slide
 
     &__slide {
-        & picture{
+        & div span {
             width: 100%;
-            //max-height: rem(500);
             & img{
                 width: 100%;
                 transition: all 1s ease 0s;

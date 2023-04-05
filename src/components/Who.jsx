@@ -11,7 +11,7 @@ const Who = () => {
                 <br/>
                 dogs shelter
             </h1>
-            <PopUp trg={<div className="shelter__img"><LazyImage image={shelter}/></div>} text={"lo0h"}>
+            <PopUp trg={<div className="shelter__img"><LazyImage image={shelter}/></div>} text={""}>
                 <img src={shelter} alt=""/>
             </PopUp>
             
