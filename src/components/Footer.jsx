@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer" id="footer">
             <div className="footer__container">
                 <div className="footer__top top-footer">
                     <div className="top-footer__inform">
@@ -17,7 +17,7 @@ const Footer = () => {
                 <div className="footer__bottom bottom-footer">
                     <h1 className="bottom-footer__title">© Green Shelter 2023</h1>
                     <div className="bottom-footer__icons">
-                        <a href="#" className="bottom-footer__icon"><i className="icon-instagram"></i></a>
+                        <a href="https://www.instagram.com/green_house_dogs_shelter" className="bottom-footer__icon"><i className="icon-instagram"></i></a>
                         <a href="#" className="bottom-footer__icon"><i className="icon-telegram"></i></a>
                     </div>
                 </div>

@@ -13,11 +13,11 @@ import { LazyImage } from "../LazyImage";
 const Header = () => {
     const images = [dog1 , dog2]
     const links = [
-        "Хто ми",
-        "Наша діяльність",
-        "Команда",
-        "Контакти",
-        "Галерея"
+        {title : "Хто ми" , dataId : "shelter"},
+        {title : "Наша діяльність" , dataId : "help"},
+        {title : "Команда" , dataId : "team"},
+        {title : "Контакти", dataId:"footer"},
+        {title : "Галерея" , dataId : "gallery"},
     ];
     const params = {
         modules: [Navigation,EffectFade,Pagination , Autoplay],
@@ -45,14 +45,22 @@ const Header = () => {
     }
     const [isOpen , setIsOpen] = useState(false);
     const [hideOrShow , setHideOrShow] = useState("");
-    const toggleMenu = () => {
+    const toggleMenu = (event) => {
+        event.preventDefault();
+            const id = event.target.dataset.scroll;
+            const element = document.getElementById(id);  
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            };
+            
         setIsOpen((prev) => !prev);
         if(isOpen){
+            
             setHideOrShow(() => {
                 return ""
             })
         }
-        else{
+        else if(isOpen === false && window.innerWidth < 991.98){
             setHideOrShow(() => {
                 return "_active-menu"
             })
@@ -68,7 +76,7 @@ const Header = () => {
                             <ul className="menu__list">
                                 {links.map((link , index) => {
                                     return (
-                                        <li className="menu__item" key={index}><a href="#" className="menu__link" onClick={toggleMenu}>{link}</a></li>  
+                                        <li className="menu__item" key={index}  ><a href="#" className="menu__link" onClick={toggleMenu} data-scroll={link.dataId}>{link.title}</a></li>  
                                     );
                                 })}
                             </ul>   
@@ -77,7 +85,8 @@ const Header = () => {
                         <HeaderPopUp   trg={<div className="header__button btn-heart"><span>Підтримати</span><FontAwesomeIcon icon={faHeart} beat /></div>}>
                             <div className="custom-popup1__inform">
                                 <h1 className="custom-popup1__title">Мій собака – моє серцебиття біля моїх ніг!</h1>
-                                <p className="custom-popup1__sub-title">Задонативши нам, ви долучитесь до будівництва притулку для собак. Також ваша фінансова допомога буде спрямована на підготовку вакцин та необхідних документів для виїзду собачок закордон.</p>
+                                <p className="custom-popup1__sub-title">Задонативши нам, ви долучитесь до будівництва притулку для собак біля українсько-польського кордон. Також ваша фінансова допомога буде спрямована на підготовку вакцин та необхідних документів для виїзду собачок закордон.
+                                </p>
                                 { window.innerWidth > 991 ?<div className="custom-popup1__qr">
                                     <LazyImage image={qr}/>
                                 </div> : ""} 
@@ -85,7 +94,7 @@ const Header = () => {
                             <div className="custom-popup1__buttons">
                                 <button className="custom-popup1__button"></button>
                                 <button className="custom-popup1__button"></button>
-                                <HeaderPopUp close={false} trg={<button className="custom-popup1__button"><FontAwesomeIcon icon={faCreditCard}  bounce/><span>Card</span></button>}>
+                                <HeaderPopUp   trg={<button className="custom-popup1__button"><FontAwesomeIcon icon={faCreditCard}  bounce/><span>Card</span></button>}>
                                     <div className="popup__card card-popup">
                                         <div className="card-popup__fields">
                                             <div className="card-popup__input">

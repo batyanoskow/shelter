@@ -30,7 +30,11 @@
 	justify-content: center;
 	margin:  0 rem(40);
 	& img {
+		padding: rem(70) 0;
 		width: 90%;
+	}
+	& span {
+		
 	}
 }
 .header-overlay{
@@ -161,6 +165,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
+	z-index: 999;
 	&__fields{
 		width: 50%;
 		display: flex;

@@ -5,11 +5,11 @@ import team1 from "../img/team1.webp"
 import team2 from "../img/team2.webp"
 import team3 from "../img/team3.webp"
 import team4 from "../img/team4.webp"
-import team5 from "../img/team5.webp"
 
 const Team = () => {
 	const paramsTeam = {
 		modules: [ Autoplay ],
+		loop : true,
 		slidesPerView : 2,
 		freeMode: false,
 		spaceBetween: 30,
@@ -20,7 +20,7 @@ const Team = () => {
 			enabled: true,
 			delay: 1,
 		},
-		speed: 10000,
+		speed: 5000,
 		breakpoints: {
 			319.99: {
 				slidesPerView: 1
@@ -31,14 +31,16 @@ const Team = () => {
 			1150: {
 				slidesPerView: 3
 			}
-	}}
+		}
+}
 	const imagesTeam = [
 			team1,
 			team2,
 			team3,
 			team4,
-			team5,
-			team5
+			team4,
+
+			team4,
 	];
 
     return(
@@ -48,6 +50,25 @@ const Team = () => {
 					<h1 className="team__title"><span>Наша</span><br/>Команда</h1>
 					<p className="team__sub-title">Наша команда це група інтузіастів та людей які хочуть пренести трішки тепла в наш світ, в <span>Green Shelter</span> працюють тілки експерти та вони знають як і що правильно робити. а найголовніше всі вони з добрим піклуючим сердцем.</p>
 				</div>
+				<Swiper
+				lazy={{
+					loadPrevNext: true,
+					loadPrevNextAmount: 2
+				}}
+				className="team__slider"
+				wrapperClass="team__wrapper"
+				lazyPreloaderClass="swiper-lazy-preloader"
+				{...paramsTeam}
+				>
+				{imagesTeam.map((img , index) => {
+					return(
+						<SwiperSlide className="team__slide" key={index}>
+							<LazyImage  image={img} key={img}/>
+						</SwiperSlide>
+					)
+				})}
+				</Swiper>
+				<h1 className="team__title"><span>Волонтери</span><br/></h1>
 				<Swiper
 				lazy={{
 					loadPrevNext: true,

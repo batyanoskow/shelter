@@ -29,11 +29,11 @@ const VideoBlock = () => {
                         </div>
                         <div className="video__videos videos">
                         <div className="videos__block">
-                            <video src={video} ref={videoRef1} preload={"1"} playsInline  onLoad={(e) => e.preventDefault()}></video>
+                            <video src={video} ref={videoRef1} preload="auto" playsInline  onLoad={(e) => e.preventDefault()}></video>
                             <button className="videos__play play1" onClick={() => togglePlay(videoRef1, isPlaying1, setIsPlaying1 , 1)}><i className="icon-play"></i></button>
                         </div>
                         <div className="videos__block">
-                            <video src={video} ref={videoRef2} preload={"1"} playsInline  onLoad={(e) => e.preventDefault()}></video>
+                            <video src={video} ref={videoRef2} preload="auto" playsInline  onLoad={(e) => e.preventDefault()}></video>
                             <button className="videos__play play2"  onClick={() => togglePlay(videoRef2, isPlaying2, setIsPlaying2 , 2)}><i className="icon-play"></i></button>
                         </div>
 			        </div>

@@ -10,6 +10,7 @@
         grid-row-start: 1;
         grid-row-end: 3;
         min-width: 50%;
+        @include adaptiveValue("height", 380, 188);
         & img{
             width: 100%;
             height: 100%;
@@ -157,7 +158,7 @@
         line-height: 120%;
     }
 }
-@media (max-width: em(580)){
+@media (max-width: em(660)){
     .grid-help__card{
         width: 100%;
     }
@@ -305,6 +306,7 @@
     // .gallery__grid
 
     &__grid {
+        @include adaptiveValue("height", 1000, 440 , 1600 , 531 , 1);
         display: grid;
         grid-template-columns: 1fr 1fr 1.2fr;
         grid-template-areas:
@@ -350,6 +352,7 @@
 }
 @media (max-width:em(530)){
     .gallery__grid{
+        @include adaptiveValue("height", 2115, 1275 ,530 , 320 ,1);
         display: flex;
         flex-direction: column;
     }
@@ -420,7 +423,7 @@
 
     &__slider {
         overflow: hidden;
-       
+        margin: rem(70) 0;
     }
 
     // .team__wrapper
@@ -438,10 +441,16 @@
     // .team__slide
 
     &__slide {
-        & div span {
+        max-height: rem(320);
+        & div 
+        {
+            width: 100%;
+            height: 100%;
+            & span {
             width: 100%;
             & img{
                 width: 100%;
+                height: 100%;
                 transition: all 1s ease 0s;
                 &:hover{
                     filter: grayscale(100%);
@@ -449,6 +458,7 @@
                 
             }
         }
+    }
     }
 }
 .swiper1 {
