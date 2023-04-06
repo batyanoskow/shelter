@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/shelter/static/css/main.33b7bcdf.css",
-    "main.js": "/shelter/static/js/main.f68575b8.js",
+    "main.css": "/shelter/static/css/main.ee3e5058.css",
+    "main.js": "/shelter/static/js/main.ab93341e.js",
     "static/media/video.mp4": "/shelter/static/media/video.2c04f44b63da97148ce3.mp4",
+    "static/media/team1.webp": "/shelter/static/media/team1.70d52c20447c309d9a6c.webp",
     "static/media/pay.png": "/shelter/static/media/pay.c5675a8d671d48c62b95.png",
+    "static/media/team2.webp": "/shelter/static/media/team2.c05e51b30213bb228bb1.webp",
     "static/media/dog2.webp": "/shelter/static/media/dog2.b78dc56e1e9f19c7f467.webp",
+    "static/media/team3.webp": "/shelter/static/media/team3.ba35ffa4653cc3b9baf3.webp",
+    "static/media/team4.webp": "/shelter/static/media/team4.85ce762f59e194d9fbb9.webp",
     "static/media/bg-3.webp": "/shelter/static/media/bg-3.f370085471cc6c52a11c.webp",
     "static/media/shelter.webp": "/shelter/static/media/shelter.70bb049e9da2b5893564.webp",
     "static/media/dog1.webp": "/shelter/static/media/dog1.50660d50aab21947765a.webp",
     "static/media/gallery4.webp": "/shelter/static/media/gallery4.96094e3c8c428b62e8c2.webp",
-    "static/media/team5.webp": "/shelter/static/media/team5.851115483b403f45ffef.webp",
     "static/media/gallery5.webp": "/shelter/static/media/gallery5.33adc7e98a0ec2ab4dd9.webp",
-    "static/media/team3.webp": "/shelter/static/media/team3.878eb68b52fda07e4ef7.webp",
     "static/media/gallery1.webp": "/shelter/static/media/gallery1.241fdc7975064a53e93d.webp",
     "static/media/icons.ttf": "/shelter/static/media/icons.6820ab35710bbfc18f96.ttf",
     "static/media/gallery2.webp": "/shelter/static/media/gallery2.694674e590dcaf30acb0.webp",
     "static/media/qr.webp": "/shelter/static/media/qr.afdf22d54a0e11b69722.webp",
-    "static/media/team2.webp": "/shelter/static/media/team2.844f759488e08c56d37f.webp",
     "static/media/gallery3.webp": "/shelter/static/media/gallery3.bded52462b0fddcd5310.webp",
     "static/media/gallery7.webp": "/shelter/static/media/gallery7.b7fd254393c07f293e93.webp",
     "static/media/gallery6.webp": "/shelter/static/media/gallery6.d24027cf26ad80e50792.webp",
-    "static/media/team4.webp": "/shelter/static/media/team4.38b6d17ff1422db743ef.webp",
-    "static/media/team1.webp": "/shelter/static/media/team1.cfb4d356473db24d3b90.webp",
     "static/media/help2.webp": "/shelter/static/media/help2.30140bda6d7a0f546001.webp",
     "static/media/help7.webp": "/shelter/static/media/help7.3ad85746d1dca3849367.webp",
     "static/media/help3.webp": "/shelter/static/media/help3.04f1edd61f74cf61621d.webp",
@@ -30,11 +29,11 @@
     "static/media/help4.webp": "/shelter/static/media/help4.14d841958f2e98172022.webp",
     "static/media/help5.webp": "/shelter/static/media/help5.c4e15c6f5ddef800c1e6.webp",
     "index.html": "/shelter/index.html",
-    "main.33b7bcdf.css.map": "/shelter/static/css/main.33b7bcdf.css.map",
-    "main.f68575b8.js.map": "/shelter/static/js/main.f68575b8.js.map"
+    "main.ee3e5058.css.map": "/shelter/static/css/main.ee3e5058.css.map",
+    "main.ab93341e.js.map": "/shelter/static/js/main.ab93341e.js.map"
   },
   "entrypoints": [
-    "static/css/main.33b7bcdf.css",
-    "static/js/main.f68575b8.js"
+    "static/css/main.ee3e5058.css",
+    "static/js/main.ab93341e.js"
   ]
 }
