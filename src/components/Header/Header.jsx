@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Logo } from "../Logo";
 import { HeaderPopUp } from "./HeaderPopup";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart ,faCreditCard} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faGoogle , faPaypal} from "@fortawesome/free-brands-svg-icons"
+import { faHeart ,faCreditCard  } from "@fortawesome/free-solid-svg-icons";
 import { Navigation , Pagination , EffectFade , Autoplay} from "swiper";
 import dog1 from "../../img/dog1.webp"
 import dog2 from "../../img/dog2.webp"
@@ -92,8 +93,8 @@ const Header = () => {
                                 </div> : ""} 
                             </div>
                             <div className="custom-popup1__buttons">
-                                <button className="custom-popup1__button"></button>
-                                <button className="custom-popup1__button"></button>
+                                <button className="custom-popup1__button"><FontAwesomeIcon icon={faGoogle} bounce /><span>GooglePay</span></button>
+                                <button className="custom-popup1__button"><FontAwesomeIcon icon={faPaypal} bounce /><span>Paypal</span></button>
                                 <HeaderPopUp   trg={<button className="custom-popup1__button"><FontAwesomeIcon icon={faCreditCard}  bounce/><span>Card</span></button>}>
                                     <div className="popup__card card-popup">
                                         <div className="card-popup__fields">
