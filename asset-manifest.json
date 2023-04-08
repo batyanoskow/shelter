@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shelter/static/css/main.ee3e5058.css",
-    "main.js": "/shelter/static/js/main.ab93341e.js",
+    "main.css": "/shelter/static/css/main.8e001ef6.css",
+    "main.js": "/shelter/static/js/main.59136be5.js",
     "static/media/video.mp4": "/shelter/static/media/video.2c04f44b63da97148ce3.mp4",
     "static/media/team1.webp": "/shelter/static/media/team1.70d52c20447c309d9a6c.webp",
     "static/media/pay.png": "/shelter/static/media/pay.c5675a8d671d48c62b95.png",
@@ -29,11 +29,11 @@
     "static/media/help4.webp": "/shelter/static/media/help4.14d841958f2e98172022.webp",
     "static/media/help5.webp": "/shelter/static/media/help5.c4e15c6f5ddef800c1e6.webp",
     "index.html": "/shelter/index.html",
-    "main.ee3e5058.css.map": "/shelter/static/css/main.ee3e5058.css.map",
-    "main.ab93341e.js.map": "/shelter/static/js/main.ab93341e.js.map"
+    "main.8e001ef6.css.map": "/shelter/static/css/main.8e001ef6.css.map",
+    "main.59136be5.js.map": "/shelter/static/js/main.59136be5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee3e5058.css",
-    "static/js/main.ab93341e.js"
+    "static/css/main.8e001ef6.css",
+    "static/js/main.59136be5.js"
   ]
 }
